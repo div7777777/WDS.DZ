@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+</head>
+<body class="body">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+
+}
+
+  /*  */
+  body{
+      height: 920px;
+      background: linear-gradient(120deg, red, blue, yellow);
+  }
+  /* photo profil */
+  .profil{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+  }
+  .prof{
+      border-radius: 50%;
+      border: 10px solid red;
+      padding: 4px;
+      background-color: white;
+      height: 150px;
+      width: 150px;
+  }
+  /* titre */
+  .titre{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 50px;
+  }
+  .h1{
+      color: white;
+  }
+  /* picture */
+  .pictur{
+      overflow: hidden;
+  }
+  .pict{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      border: 5px solid black;
+      padding: 10px;
+      display: inline-block;
+      animation: glisse 15s infinite ease;
+  }
+  @keyframes glisse{
+     0%{
+         transform: translateX(0);
+         background-color: tomato;
+     }
+     10%{
+         transform: translateX(60px);
+         background-color: cyan;
+     }
+     20%{
+         transform: translateX(120px);
+         background-color: darkgreen;
+     }
+     30%{
+        transform: translateX(180px);
+        background-color:yellow;
+    }
+    40%{
+        transform: translateX(240px);
+        background-color: #ff1493;
+    }
+    50%{
+        transform: translateX(300px);
+        background-color: darkblue;
+    }
+    60%{
+        transform: translateX(-240px);
+        background-color: darkorange;
+    }
+    70%{
+        transform: translateX(-180px);
+        background-color: #9400d3;
+    }
+    80%{
+        transform: translateX(-120px);
+        background-color: crimson;
+    }
+    90%{
+       transform: translateX(-60px);
+       background-color: #ffc0cb
+   }
+   100%{
+       transform: translateX(0);
+       background-color: chartreuse;
+   }
+  }
+  /* réseaux sociaux */
+  .réseaux{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 25px;
+  }
+  .rsx{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 40px;
+    background: linear-gradient(120deg, darkorange, darkblue, rgb(51, 202, 202))
+  }
+  .img{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+      border: 4px solid white;  
+  }
+  .social{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 18px;
+      color: white;
+      width: 50%;
+  }
+ .social:hover{
+     color: crimson;
+     transform: scale(1.2, 1.2);
+     transition: 0.5s all;
+ }
+/* menu */
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+}
+.item:hover{
+    transform: scale(1.2, 1.2);
+    transition: 0.5s all;
+}
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+}
+.h2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+    </style>
+    <!-- image profil -->
+    <div class="profil">
+        <a href="https://www.instagram.com/site_web_dz/?hl=fr">
+        <img class="prof" src="3.png" alt="">
+        </a>
+    </div>
+    <!-- titre -->
+    <div class="titre">
+        <h1 class="h1">Développeur Site Web</h1>
+    </div>
+
+    <!-- pictur -->
+    <div class="pictur">
+        <img class="pict" src="a.png" alt="">
+        <img class="pict" src="b.png" alt="">
+        <img class="pict" src="c.png" alt="">
+        <img class="pict" src="d.png" alt="">
+    </div>
+    <!-- réseaux sociaux -->
+    <div class="réseaux">
+        <button class="rsx"><a href="https://www.instagram.com/david_hrkt/?hl=fr"><img class="img" src="rsx.png" alt=""></a> <div class="social">  INSTAGRAM</div></button>
+        <button class="rsx"><a href="https://www.facebook.com/sim.mlk.50/"><img class="img" src="rsx (2).png" alt=""></a> <div class="social">  FACEBOOK</div></button>
+        <button class="rsx"><a href=""><img class="img" src="rsx (3).png" alt=""></a> <div class="social"> TWITTER</div></button>
+        <button class="rsx"><a href=""><img class="img" src="rsx (4).png" alt=""></a> <div class="social">  MESSENGER</div></button>
+    </div>
+    <!-- menu -->
+    <div class="menu">
+        <button class="item"><a href=""><img class="items" src="ftr.png" alt=""></a></button>
+        <button class="item"><a href="https://www.google.com/maps/place/B%C3%A9ja%C3%AFa/@36.7700719,5.006979,12z/data=!3m1!4b1!4m5!3m4!1s0x12f2cca1a82082c5:0x7807b41e13330b6e!8m2!3d36.7515258!4d5.0556837"><img class="items" src="ftr (2).png" alt=""></a></button>
+        <button class="item"><a href=""><img class="items" src="ftr (3).png" alt=""></a></button>
+    </div>
+    <!-- pied de page -->
+    <footer class="footer">
+        <h2 class="h2">Copyright2022 HD</h2>
+    </footer>    
+</body>
+</html>
